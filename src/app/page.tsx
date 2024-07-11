@@ -4,11 +4,9 @@ import LongCard from "@/components/longCard";
 import SquareCard from "@/components/squareCard";
 
 const Home = async () => {
-	const blogs = await getAllBlogs();
 	return (
 		<>
 			<PageLayout>
-				<h1>{JSON.stringify(blogs)}</h1>
 				<Profile />
 				<LongCard />
 				<SquareCard />

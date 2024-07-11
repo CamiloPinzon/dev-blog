@@ -1,10 +1,10 @@
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
 const Home = () => {
 	return (
-		<>
-			<nav className="bg-gray-800 flex justify-between text-white px-10 py-8">
-				<h1>Dev Blog</h1>
-				<div>Home</div>
-			</nav>
+    <>
+      <Navbar />
 			<section className="border-b-[#CCC] border-b-2">
 				<div id="profile" className="p-10 flex gap-10 items-center">
 					<div id="profile_image">
@@ -85,7 +85,8 @@ const Home = () => {
 						<img src="https://fakeimg.pl/250/" alt="Lorem image" />
 					</div>
 				</div>
-			</div>
+      </div>
+      <Footer />
 		</>
 	);
 };
